@@ -8,10 +8,13 @@ import reactIcon from '../images/react.png';
 import nodeIcon from '../images/nodejs.png'; 
 import expressIcon from '../images/express.png'; 
 import mongoDB from '../images/mongodb.png'; 
+// import gitLabCertificate from '../images/gitlab-certificate.png';
+// import awsCertificate from '../images/aws-certificate.jpeg'; 
+
 const Main = () => {
     return (
         <> 
-            <div style={{display: 'flex', flexDirection: 'row', gap: '100px', justifyContent: 'center', alignItems: 'center', height: '70vh'}}>
+            <div style={{display: 'flex', flexDirection: 'row', gap: '100px', justifyContent: 'center', alignItems: 'center', height: '90vh'}}>
                 <div>
                     <h1 style={{fontSize:'50px'}}>Full Stack <br/>Developer</h1>
                     <p style={{marginTop: '5%'}}>
@@ -36,6 +39,7 @@ const Main = () => {
                             <li><img src={expressIcon} className="express-icon"/></li>
                             <li><img src={mongoDB} className="mongodb-icon"/></li>
                         </ul>
+  
                     </div>
 
                 </div>

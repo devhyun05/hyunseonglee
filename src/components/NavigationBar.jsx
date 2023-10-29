@@ -4,7 +4,7 @@ const NavigationBar = () => {
 
     return (
         <> 
-            <div style={{display: 'flex', flexDirection: 'row', alignItems: 'center', padding: '3% 7% 1% 7%', borderBottom: '1px solid #cecece'}}>
+            <div style={{display: 'flex', flexDirection: 'row', alignItems: 'center', padding: '3% 7% 1% 7%', borderBottom: '1px solid #cecece', }}>
                 <h3 style={{display: 'flex', gap: '10px'}}>
               
                     HyunSeongLee

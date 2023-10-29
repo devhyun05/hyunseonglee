@@ -40,4 +40,9 @@ ul > li {
   width: 50px;
 }
 
-
+/* About.jsx */ 
+.aboutPhoto {
+  width: 500px;
+  height: 500px;
+  object-fit: contain;
+}
