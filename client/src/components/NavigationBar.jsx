@@ -19,12 +19,14 @@ const NavigationBar = () => {
                     HyunSeongLee
                     <img src={codeImage} alt="" style={{width: '28px'}}/>
                 </h3>
-                <ul style={{width: '100%', display: 'flex', flexDirection: 'row', justifyContent: 'flex-end', gap: '30px'}}>                        
-                    <li><Link to="home" smooth={true} duration={500} className="nav-links">Home</Link></li>
-                    <li><Link to="about" smooth={true} duration={500} className="nav-links">About</Link></li>
-                    <li><Link to="projects" smooth={true} duration={500} className="nav-links">Projects</Link></li>
-                    <li><Link to="contact" smooth={true} duration={500} className="nav-links">Contact</Link></li>
-                </ul>
+                <nav style={{display: 'flex', width: '100%', justifyContent: 'flex-end'}}>
+                    <ul style={{display: 'flex', flexDirection: 'row', justifyContent: 'flex-end', gap: '30px'}}>                        
+                        <li><Link to="home"  spy={true} smooth={true} offset={-70}  duration={500} className="nav-links" activeClass="active-link">Home</Link></li>
+                        <li><Link to="about" spy={true} smooth={true} offset={-70} duration={500} className="nav-links" activeClass="active-link">About</Link></li>
+                        <li><Link to="projects"spy={true} smooth={true} offset={-70} duration={500} className="nav-links" activeClass="active-link">Projects</Link></li>
+                        <li><Link to="contact" spy={true} smooth={true} offset={-70} duration={500} className="nav-links" activeClass="active-link">Contact</Link></li>
+                    </ul>
+                </nav>
                 
             </div>
         </> 

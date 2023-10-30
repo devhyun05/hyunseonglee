@@ -12,6 +12,12 @@ ul > li {
 .nav-links {
   cursor: pointer;
 }
+.active-link {
+  color: blue; 
+  font-weight: bold; 
+}
+
+
 /* Main.jsx */
 .myPhoto {
   width: 350px;
