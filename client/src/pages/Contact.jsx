@@ -16,25 +16,31 @@ const Contact = () => {
                         <div style={{textAlign: 'left'}}>
                             <div style={{display: 'flex',  alignItems:'center'}}>
                                 <img src={gmailImage} style={{width: '20px', height: '20px', marginRight: '10px'}}/>
-                                <p>Mail me at   <a style={{marginTop: '2px', 
-                                                           marginLeft: '10px', 
-                                                           textDecoration: 'none'}}
-                                                           href="mailto: devhyun05@gmail.com">devhyun05@gmail.com
-                                                        
-                                                </a>
+                                <p>Mail me at   
+                                    <a style={{marginTop: '2px', 
+                                               marginLeft: '10px', 
+                                               textDecoration: 'none',
+                                               textAlign: 'left'}}
+                                               href="mailto: devhyun05@gmail.com">devhyun05@gmail.com                                                        
+                                    </a>
                                 </p> 
                             </div>
                             <div style={{marginTop: '5%', display: 'flex',  alignItems:'center'}}>
                                 <img src={linkedInImage} style={{width: '20px', height: '20px', marginRight: '10px'}}/>
                                 <p>Linkedin   <a style={{marginTop: '2px', 
-                                                         marginLeft: '10px', 
+                                                         marginLeft: '20px', 
+                                                         textAlign: 'left',
                                                          textDecoration: 'none'}}
                                                          className="contact-links"  
                                                          href="https://www.linkedin.com/in/hlee291/"  target='_blank' rel="noopener noreferrer">hlee291</a></p> 
                             </div>
                             <div style={{marginTop: '5%', display: 'flex',  alignItems:'center'}}>
                                 <img src={phoneImage} style={{width: '20px', height: '20px', marginRight: '10px'}}/>
-                                <p>Phone Number   <a style={{marginTop: '2px', marginLeft: '10px', textDecoration: 'none', color: 'blue', cursor: 'pointer'}}>437-223-7368</a></p> 
+                                <p>Phone   
+                                    <a style={{marginTop: '2px', marginLeft: '40px', textDecoration: 'none', color: 'blue', cursor: 'pointer', textAlign: 'left'}}>
+                                        437-223-7368
+                                    </a>
+                                </p> 
                             </div>
                           
                         </div>
