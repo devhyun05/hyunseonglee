@@ -1,7 +1,6 @@
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
-import { faWindowMaximize } from '@fortawesome/free-regular-svg-icons';
 import divdevImage from '../images/divdev.png'; 
 import blogImage from '../images/blog.png'; 
 import weatherImage from '../images/weather.png'; 
