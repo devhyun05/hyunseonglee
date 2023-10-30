@@ -3,7 +3,7 @@ import aboutPhoto from '../images/about-photo.jpeg';
 const About = () => {
     return (
         <>
-            <div style={{backgroundColor: '#f5f9fe', width: '100%', height: '100vh', display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems:'center'}}>
+            <div style={{backgroundColor: '#EEEEEE', width: '100%', height: '100vh', display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems:'center'}}>
                       
                 <img src={aboutPhoto} className="aboutPhoto"/> 
                 <div style={{marginLeft: '10%'}}>
