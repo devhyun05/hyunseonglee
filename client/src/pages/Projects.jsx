@@ -114,7 +114,7 @@ const Projects = () => {
                                 Users can create their own team, find teammates, record their results to the website.
                             </p>
                             <p style={{fontWeight: 'bold', marginTop: '5%'}}>
-                                Tech Stack: React, Node, Express, MongoDB, S3 Bucket, JWT
+                                Tech Stack: React, Node, Express, MongoDB, AWS S3 Bucket, JWT
                             </p>
                             <div style={{display: 'flex', marginTop: '5%', justifyContent:'center', gap: '30px'}}>                         
                                     <button className="github-button">
