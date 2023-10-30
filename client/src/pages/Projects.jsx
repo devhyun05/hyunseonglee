@@ -31,13 +31,17 @@ const Projects = () => {
                             <p style={{fontWeight: 'bold', marginTop: '5%'}}>
                                 Tech Stack: React, Node, Express, MongoDB, Material UI, S3 bucket, Skills API, Node Mailer, JWT
                             </p>
-                            <div style={{display: 'flex', marginTop: '5%', justifyContent:'center', gap: '30px'}}>                         
-                                    <button className="github-button">
-                                        Code <FontAwesomeIcon icon={faGithub} size="2x"/> 
-                                    </button>                                                
-                                    <button className="demo-button">
-                                        Live Demo<FontAwesomeIcon icon={faWindowMaximize} size="2x" />
-                                    </button>            
+                            <div style={{display: 'flex', marginTop: '5%', justifyContent:'center', gap: '30px'}}>   
+                                    <a href="https://github.com/devhyun05/divdev" className="link-style">                      
+                                        <button className="github-button">
+                                            Code <FontAwesomeIcon icon={faGithub} size="2x"/> 
+                                        </button>                                                
+                                    </a>
+                                    <a href="https://www.divdev.pro" className="link-style">
+                                        <button className="demo-button">
+                                            Live Demo<FontAwesomeIcon icon={faWindowMaximize} size="2x" />
+                                        </button>            
+                                    </a>
                             </div>
                         </div>
                      </div>   
@@ -58,12 +62,16 @@ const Projects = () => {
                                 Tech Stack: React, Solidity
                             </p>
                             <div style={{display: 'flex', marginTop: '5%', justifyContent:'center', gap: '30px'}}>                         
-                                    <button className="github-button">
-                                        Code <FontAwesomeIcon icon={faGithub} size="2x"/> 
-                                    </button>                                                
-                                    <button className="demo-button">
-                                        Live Demo<FontAwesomeIcon icon={faWindowMaximize} size="2x" />
-                                    </button>            
+                                    <a href="https://github.com/devhyun05/Accuwork" className="link-style">
+                                        <button className="github-button">
+                                            Code <FontAwesomeIcon icon={faGithub} size="2x"/> 
+                                        </button>                                                
+                                    </a>
+                                    <a href="https://www.accuwork.pro" className="link-style">
+                                        <button className="demo-button">
+                                            Live Demo<FontAwesomeIcon icon={faWindowMaximize} size="2x" />
+                                        </button>            
+                                    </a>
                             </div>
                         </div>
                      </div>   
@@ -82,12 +90,16 @@ const Projects = () => {
                                 Tech Stack: React, Node, Express, Weather API
                             </p>
                             <div style={{display: 'flex', marginTop: '5%', justifyContent:'center', gap: '30px'}}>                         
-                                    <button className="github-button">
-                                        Code <FontAwesomeIcon icon={faGithub} size="2x"/> 
-                                    </button>                                                
-                                    <button className="demo-button">
-                                        Live Demo<FontAwesomeIcon icon={faWindowMaximize} size="2x" />
-                                    </button>            
+                                    <a href="https://github.com/devhyun05/WhatToWear" className="link-style">
+                                        <button className="github-button">
+                                            Code <FontAwesomeIcon icon={faGithub} size="2x"/> 
+                                        </button>                                                
+                                    </a>
+                                    <a href="https://www.whattoweartoday.pro" className="link-style">
+                                        <button className="demo-button">
+                                            Live Demo<FontAwesomeIcon icon={faWindowMaximize} size="2x" />
+                                        </button>           
+                                    </a> 
                             </div>
                         </div>
                      </div>   
