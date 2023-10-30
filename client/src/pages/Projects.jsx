@@ -11,7 +11,7 @@ import soccerBall from '../images/soccer-ball.png';
 import accuwork from '../images/accuwork.png'; 
 import accuworkWebsite from '../images/accuworkWebsite.png'; 
 import piece from '../images/puzzle.png'; 
-
+import demoImage from '../images/demo.png'; 
 const Projects = () => {
     return (
         <>
@@ -39,7 +39,7 @@ const Projects = () => {
                                     </a>
                                     <a href="https://www.divdev.pro" className="link-style">
                                         <button className="demo-button">
-                                            Live Demo<FontAwesomeIcon icon={faWindowMaximize} size="2x" />
+                                            Demo<img src={demoImage} alt="" style={{width: '30px', height:'30px'}}/>
                                         </button>            
                                     </a>
                             </div>
@@ -69,7 +69,7 @@ const Projects = () => {
                                     </a>
                                     <a href="https://www.accuwork.pro" className="link-style">
                                         <button className="demo-button">
-                                            Live Demo<FontAwesomeIcon icon={faWindowMaximize} size="2x" />
+                                            Demo<img src={demoImage} alt="" style={{width: '30px', height:'30px'}}/>
                                         </button>            
                                     </a>
                             </div>
@@ -97,7 +97,7 @@ const Projects = () => {
                                     </a>
                                     <a href="https://www.whattoweartoday.pro" className="link-style">
                                         <button className="demo-button">
-                                            Live Demo<FontAwesomeIcon icon={faWindowMaximize} size="2x" />
+                                            Demo<img src={demoImage} alt="" style={{width: '30px', height:'30px'}}/>
                                         </button>           
                                     </a> 
                             </div>
@@ -122,7 +122,7 @@ const Projects = () => {
                                         Code <FontAwesomeIcon icon={faGithub} size="2x"/> 
                                     </button>                                                
                                     <button className="demo-button">
-                                        Live Demo<FontAwesomeIcon icon={faWindowMaximize} size="2x" />
+                                        Demo<img src={demoImage} alt="" style={{width: '30px', height:'30px'}}/>
                                     </button>            
                             </div>
                         </div>
