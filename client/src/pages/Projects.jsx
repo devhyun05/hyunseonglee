@@ -15,10 +15,10 @@ import piece from '../images/puzzle.png';
 const Projects = () => {
     return (
         <>
-            <div style={{display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', width: '100%', height: '100vh', textAlign: 'left', marginTop: '30%'}}>
-                    <h2 style={{color: '#3486e6', marginBottom: '2%'}}>PROJECTS</h2>
+            <div id="projects" style={{display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', width: '100%', height: '150vh', textAlign: 'left', paddingBottom: '5%'}}>
+                    <h2 style={{color: '#3486e6', marginBottom: '2%', paddingTop: '25%'}}>PROJECTS</h2>
                     <h3>All projects are unique piece of work <img src={piece} alt="" style={{width: '20px', height: '20px'}}/></h3>
-                    <div style={{width: '60%', height: '40%', display: 'flex', flexDirection: 'row', gap: '50px', marginTop: '5%'}}>
+                    <div style={{width: '60%', height: '25%', display: 'flex', flexDirection: 'row', gap: '50px', paddingTop: '5%'}}>
                         <img src={divdevImage}  alt="" className="project-images"/>    
                         <div style={{display: 'flex', flexDirection: 'column'}}>
                             <h3 style={{textAlign: 'center', marginBottom: '5%'}}>
@@ -46,7 +46,7 @@ const Projects = () => {
                         </div>
                      </div>   
                      
-                     <div style={{width: '60%',height: '40%', display: 'flex', flexDirection: 'row', gap: '50px'}}>
+                     <div style={{width: '60%',height: '25%', display: 'flex', flexDirection: 'row', gap: '50px'}}>
                         <img src={accuworkWebsite}  alt="" className="project-images"/>    
                         <div style={{display: 'flex', flexDirection: 'column'}}>
                             <h3 style={{textAlign: 'center', marginBottom: '5%'}}>
@@ -76,7 +76,7 @@ const Projects = () => {
                         </div>
                      </div>   
 
-                     <div style={{width: '60%',height: '40%', display: 'flex', flexDirection: 'row', gap: '50px'}}>
+                     <div style={{width: '60%',height: '25%', display: 'flex', flexDirection: 'row', gap: '50px'}}>
                         <img src={weatherApp}  alt="" className="project-images"/>    
                         <div style={{display: 'flex', flexDirection: 'column'}}>
                             <h3 style={{textAlign: 'center', marginBottom: '5%'}}>
@@ -104,7 +104,7 @@ const Projects = () => {
                         </div>
                      </div>   
 
-                     <div style={{width: '60%', display: 'flex', flexDirection: 'row', gap: '50px'}}>
+                     <div style={{width: '60%', height: '25%', display: 'flex', flexDirection: 'row', gap: '50px'}}>
                         <img src={playpalImage}  alt="" className="project-images"/>    
                         <div style={{display: 'flex', flexDirection: 'column'}}>
                             <h3 style={{textAlign: 'center', marginBottom: '5%'}}>

@@ -9,6 +9,9 @@ ul > li {
   list-style-type: none;
 }
 
+.nav-links {
+  cursor: pointer;
+}
 /* Main.jsx */
 .myPhoto {
   width: 350px;

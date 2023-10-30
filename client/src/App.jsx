@@ -1,4 +1,5 @@
 import './App.css'
+import { Element } from 'react-scroll'; 
 import NavigationBar from './components/NavigationBar';
 import Main from './pages/Main';
 import About from './pages/About'; 
@@ -11,10 +12,18 @@ function App() {
     <>
       <div className="App">
         <NavigationBar/>
-        <Main/>
-        <About/>
-        <Projects/>
-        <Contact/>
+        <Element name="home">
+          <Main/>
+        </Element>
+        <Element name="about">
+          <About/>
+        </Element>
+        <Element name="projects">
+          <Projects/>
+        </Element>
+        <Element name="contact">
+          <Contact/>
+        </Element>
       </div>
     </>
   )

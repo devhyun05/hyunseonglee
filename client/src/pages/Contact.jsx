@@ -5,8 +5,8 @@ import linkedInImage from '../images/linkedin.png';
 const Contact = () => {
     return (
         <>
-            <div style={{height: '100vh', marginTop: '15%', backgroundColor: '#f8f4fc', textAlign: 'center'}}>
-                <h2 style={{color: '#3486e6', paddingTop: '5%'}}>
+            <div id="contact" style={{height: '100vh',  backgroundColor: '#f8f4fc', textAlign: 'center'}}>
+                <h2 style={{color: '#3486e6', paddingTop: '8%'}}>
                     Contacts
                 </h2>
                 <div style={{marginTop: '8%',display: 'flex', flexDirection: 'row', justifyContent: 'center', gap: '10%'}}>

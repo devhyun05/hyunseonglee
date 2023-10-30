@@ -14,7 +14,7 @@ import mongoDB from '../images/mongodb.png';
 const Main = () => {
     return (
         <> 
-            <div style={{display: 'flex', flexDirection: 'row', gap: '100px', justifyContent: 'center', alignItems: 'center', height: '90vh'}}>
+            <div style={{display: 'flex', flexDirection: 'row', gap: '100px', justifyContent: 'center', alignItems: 'center', height: '100vh'}}>
                 <div>
                     <h1 style={{fontSize:'40px'}}>Software Developer</h1>
                     <p style={{marginTop: '5%'}}>
