@@ -6,10 +6,10 @@ const Contact = () => {
     return (
         <>
             <div id="contact" style={{height: '100vh',  backgroundColor: '#f8f4fc', textAlign: 'center'}}>
-                <h2 style={{color: '#3486e6', paddingTop: '8%'}}>
+                <h2 style={{color: '#3486e6', paddingTop: '5%'}}>
                     Contacts
                 </h2>
-                <div style={{marginTop: '8%',display: 'flex', flexDirection: 'row', justifyContent: 'center', gap: '10%'}}>
+                <div style={{marginTop: '3%',display: 'flex', flexDirection: 'row', justifyContent: 'center', gap: '10%'}}>
                   
 
                     <div style={{width: '20%', height: '300px', backgroundColor: '#FFFFFF', border: '1px solid #f7f7f9', borderRadius: '30px', padding: '15px 70px 70px 30px'}}>
