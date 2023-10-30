@@ -15,7 +15,7 @@ import piece from '../images/puzzle.png';
 const Projects = () => {
     return (
         <>
-            <div id="projects" style={{display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', width: '100%', height: '150vh', textAlign: 'left', paddingBottom: '5%'}}>
+            <div id="projects" style={{display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', width: '100%', height: '150vh', textAlign: 'left', paddingBottom: '20%'}}>
                     <h2 style={{color: '#3486e6', marginBottom: '2%', paddingTop: '25%'}}>PROJECTS</h2>
                     <h3>All projects are unique piece of work <img src={piece} alt="" style={{width: '20px', height: '20px'}}/></h3>
                     <div style={{width: '60%', height: '25%', display: 'flex', flexDirection: 'row', gap: '50px', paddingTop: '5%'}}>
