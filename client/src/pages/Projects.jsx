@@ -28,7 +28,7 @@ const Projects = () => {
                                 blog posting, profile setup, also uploading personal projects.
                             </p>
                             <p style={{fontWeight: 'bold', marginTop: '5%'}}>
-                                Tech Stack: React, Node, Express, MongoDB, Material UI, S3 bucket, Skills API, Node Mailer, JWT
+                                Tech Stack: React, Node, Express, MongoDB, Material UI, AWS S3 bucket, Skills API, Node Mailer, JWT
                             </p>
                             <div style={{display: 'flex', marginTop: '5%', justifyContent:'center', gap: '30px'}}>   
                                     <a href="https://github.com/devhyun05/divdev" className="link-style">                      
