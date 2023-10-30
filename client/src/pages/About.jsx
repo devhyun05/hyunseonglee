@@ -9,7 +9,7 @@ const About = () => {
                 <div style={{marginLeft: '10%'}}>
                     <h3 style={{color: '#3486e6', marginBottom: '3%'}}>ABOUT ME</h3>
                     <p>
-                        I&apos;m junior full stack developer who is actively <br/>
+                        I&apos;m junior software developer who is actively <br/>
                         looking for co-op position at 2024 summer term.
 
                     </p>

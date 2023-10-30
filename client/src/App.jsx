@@ -3,7 +3,7 @@ import NavigationBar from './components/NavigationBar';
 import Main from './pages/Main';
 import About from './pages/About'; 
 import Projects from './pages/Projects'; 
-
+import Contact from './pages/Contact';
 function App() {
 
 
@@ -14,6 +14,7 @@ function App() {
         <Main/>
         <About/>
         <Projects/>
+        <Contact/>
       </div>
     </>
   )
