@@ -12,8 +12,8 @@ const Contact = () => {
                 <div style={{marginTop: '3%',display: 'flex', flexDirection: 'row', justifyContent: 'center', gap: '10%'}}>
                   
 
-                    <div style={{width: '20%', height: '300px', backgroundColor: '#FFFFFF', border: '1px solid #f7f7f9', borderRadius: '30px', padding: '15px 70px 70px 30px'}}>
-                        <div style={{textAlign: 'left'}}>
+                    <div style={{width: '20%', height: '150px', backgroundColor: '#FFFFFF', border: '1px solid #f7f7f9', borderRadius: '30px', padding: '15px 70px 70px 30px'}}>
+                        <div style={{width: '100%', marginTop: '15%', marginLeft: '5%', textAlign: 'left',  }}>
                             <div style={{display: 'flex',  alignItems:'center'}}>
                                 <img src={gmailImage} style={{width: '20px', height: '20px', marginRight: '10px'}}/>
                                 <p>Mail me at   
