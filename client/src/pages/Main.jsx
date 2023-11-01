@@ -18,7 +18,7 @@ const Main = () => {
                 <div>
                     <h1 style={{fontSize:'40px'}}>Software Developer</h1>
                     <p style={{marginTop: '5%'}}>
-                        Hi, I&apos;m Hyun Seong Lee. A passionate <br/> Full Stack Developer in Toronto, Ontario 
+                        Hi, I&apos;m Hyun Seong Lee. A passionate <br/> Software Developer in Toronto, Ontario 
                     </p>
                     <div style={{marginTop: '5%'}}>
                         <a className="github-icon" href="https://github.com/devhyun05" target='_blank' rel="noopener noreferrer">
