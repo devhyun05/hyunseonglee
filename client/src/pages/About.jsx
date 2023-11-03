@@ -15,25 +15,29 @@ const About = () => {
                     </p>
                     <h3 style={{color: '#3486e6', marginTop: '5%', marginBottom: '3%'}}>Technical Proficiency</h3>
                     <p>
-                        I am confidence with building application with MERN <br/>
+                        I&apos;ve experienced building application with MERN <br/>
                         (MongoDB, Express.js, React, Node.js) stack. I&apos;ve developed <br/>
                         scalable applications as personal and team projects.
                     </p>
                     <h3 style={{color: '#3486e6', marginTop: '5%', marginBottom: '3%'}}>Bridging Tech and Business</h3>
                     <p>
-                        I want to become a developer who understands the <br/> business 
-                        and its changes clearly to contribute to the team. <br/>
-                        I recently got two certificates which are git associate  <br/>
-                        and AWS cloud practitioner. I believe that these knowledge <br/>
-                        will increase my ability to adapt dynamic industry.
+                        I aspire to evolve into a developer who possesses a keen <br/>
+                        understanding of both business operations and their dynamic <br/>
+                        changes, enabling me to make valuable contributions to the team. <br/>
                     </p>
-                    <h3 style={{color: '#3486e6', marginTop: '5%', marginBottom: '3%'}}>Vision in the future</h3>
+                    <h3 style={{color: '#3486e6', marginTop: '5%', marginBottom: '3%'}}>Goal in the future</h3>
                     <p>
-                        I&apos;m a developer who always trying to find the better solution. <br/>
-                        If the low code platform is more suitable for the team <br/>
-                        project, I should use it. I will constantly learning not <br/>
-                        only my main languages, also the new coming software skills. <br/>
-                        
+                        As various cutting-edge technologies such as AI and VR <br/>
+                        continue to emerge, I am committed to staying abreast <br/>
+                        of these changes. I am consistently dedicated to learning <br/>
+                        , whether it be in business or technology, and I am <br/>
+                        prepared to give my best effort. I am driven by the desire <br/>
+                        to create technologies that can contribute to a better life <br/>
+                        for people. By accomplishing small, achieveable goals one <br/>
+                        by one, I am on a journey to become a developer who not <br/>
+                        only crafts innovative solutions but also brings about <br/>
+                        positive impact, aspiring to enhance the well-being of <br/>
+                        individual.                
                     </p>
                 </div>
 
