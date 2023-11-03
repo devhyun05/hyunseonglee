@@ -41,6 +41,10 @@ ul > li {
   width: 40px;
 }
 
+.certificates {
+  width: 80px;
+  height: 80px;
+}
 .express-icon {
   width: 70px;
 }

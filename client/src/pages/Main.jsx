@@ -8,8 +8,8 @@ import reactIcon from '../images/react.png';
 import nodeIcon from '../images/nodejs.png'; 
 import expressIcon from '../images/express.png'; 
 import mongoDB from '../images/mongodb.png'; 
-// import gitLabCertificate from '../images/gitlab-certificate.png';
-// import awsCertificate from '../images/aws-certificate.jpeg'; 
+import gitLabCertificate from '../images/gitlab-certificate.png';
+import awsCertificate from '../images/aws-certificate.png'; 
 
 const Main = () => {
     return (
@@ -38,8 +38,14 @@ const Main = () => {
                             <li><img src={nodeIcon} className="tech-stack-icons"/></li>
                             <li><img src={expressIcon} className="express-icon"/></li>
                             <li><img src={mongoDB} className="mongodb-icon"/></li>
+                        </ul>  
+                    </div>
+                    <div style={{marginTop: '5%'}}>
+                        <h2>Certifications</h2>
+                        <ul style={{display: 'flex', marginTop: '5%', gap:'10px', alignItems: 'center'}}>
+                            <li><a href="https://www.credly.com/badges/45f523b9-2e5a-4dea-a275-e5919fefa486/public_url"><img src={awsCertificate} className="certificates"/></a></li>
+                            <li><a href="https://www.credly.com/badges/b3233350-8b86-4b4b-ba68-55b98e37234d/public_url"><img src={gitLabCertificate} className="certificates"/></a></li>
                         </ul>
-  
                     </div>
 
                 </div>
