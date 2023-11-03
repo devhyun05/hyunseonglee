@@ -15,7 +15,7 @@ const Main = () => {
     return (
         <> 
             <div id="main" style={{display: 'flex', flexDirection: 'row', gap: '100px', justifyContent: 'center', alignItems: 'center', height: '100vh'}}>
-                <div>
+                <div style={{marginTop: '5%'}}>
                     <h1 style={{fontSize:'40px'}}>Software Developer</h1>
                     <p style={{marginTop: '5%'}}>
                         Hi, I&apos;m Hyun Seong Lee. A passionate <br/> Software Developer in Toronto, Ontario 
