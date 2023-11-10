@@ -117,12 +117,16 @@ const Projects = () => {
                                 Tech Stack: React, Node, Express, MongoDB, AWS S3 Bucket, JWT
                             </p>
                             <div style={{display: 'flex', marginTop: '5%', justifyContent:'center', gap: '30px'}}>                         
-                                    <button className="github-button">
-                                        Code <FontAwesomeIcon icon={faGithub} size="2x"/> 
-                                    </button>                                                
-                                    <button className="demo-button">
-                                        Demo<img src={demoImage} alt="" style={{width: '30px', height:'30px'}}/>
-                                    </button>            
+                                    <a href="https://github.com/devhyun05/sourcerers-leagueMgmt" className="link-style">
+                                        <button className="github-button">
+                                            Code <FontAwesomeIcon icon={faGithub} size="2x" className="link-style"/> 
+                                        </button>                   
+                                    </a>             
+                                    <a href="https://playpal.netlify.app/" target="_blank" rel="noreferrer">
+                                        <button className="demo-button">
+                                            Demo<img src={demoImage} alt="" style={{width: '30px', height:'30px'}}/>
+                                        </button>            
+                                    </a>
                             </div>
                         </div>
                      </div>                               
