@@ -1,6 +1,6 @@
 import myPhoto from '../images/hyunseonglee.jpeg'; 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faGithub, faLinkedin, faYoutube } from '@fortawesome/free-brands-svg-icons';
 import htmlIcon from '../images/html5.png'; 
 import cssIcon from '../images/css3.png';
 import jsIcon from '../images/js.png'; 
@@ -26,6 +26,9 @@ const Main = () => {
                         </a>
                         <a className="linkedin-icon" href="https://www.linkedin.com/in/hlee291/" target='_blank' rel="noopener noreferrer">
                             <FontAwesomeIcon icon={faLinkedin} size="2x" />
+                        </a>
+                        <a className="youtube-icon" href="https://www.youtube.com/channel/UCVc7CD3e9Xl-I_O6a9gPL8w" target='_blank' rel="noopener noreferrer">
+                            <FontAwesomeIcon icon={faYoutube} size="2x" />
                         </a>
                     </div>
                     <div style={{marginTop:'5%'}}>

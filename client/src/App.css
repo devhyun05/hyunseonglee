@@ -33,10 +33,15 @@ ul > li {
 }
 
 .linkedin-icon {
+  margin-right: 5%; 
   color: #305fb0;
   cursor: pointer;
 }
 
+.youtube-icon {
+  color: red; 
+  cursor: pointer;
+}
 .tech-stack-icons {
   width: 40px;
 }
