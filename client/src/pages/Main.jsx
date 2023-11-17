@@ -11,6 +11,7 @@ import mongoDB from '../images/mongodb.png';
 import gitLabCertificate from '../images/gitlab-certificate.png';
 import awsCertificate from '../images/aws-certificate.png'; 
 
+
 const Main = () => {
     return (
         <> 
