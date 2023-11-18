@@ -10,7 +10,7 @@ import expressIcon from '../images/express.png';
 import mongoDB from '../images/mongodb.png'; 
 import gitLabCertificate from '../images/gitlab-certificate.png';
 import awsCertificate from '../images/aws-certificate.png'; 
-
+import agileCertificate from '../images/agile-certificate.png'; 
 
 const Main = () => {
     return (
@@ -49,6 +49,7 @@ const Main = () => {
                         <ul style={{display: 'flex', marginTop: '5%', gap:'10px', alignItems: 'center'}}>
                             <li><a href="https://www.credly.com/badges/45f523b9-2e5a-4dea-a275-e5919fefa486/public_url"><img src={awsCertificate} className="certificates"/></a></li>
                             <li><a href="https://www.credly.com/badges/b3233350-8b86-4b4b-ba68-55b98e37234d/public_url"><img src={gitLabCertificate} className="certificates"/></a></li>
+                            <li><a href="https://coursera.org/share/6f3dfb2b77e44ccd9f3a4178d1c31b63"><img src={agileCertificate} className="certificates"/></a></li>
                         </ul>
                     </div>
 
