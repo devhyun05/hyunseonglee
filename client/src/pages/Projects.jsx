@@ -1,4 +1,5 @@
 
+import { useState } from 'react'; 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import divdevImage from '../images/divdev.png'; 
@@ -12,12 +13,26 @@ import accuworkWebsite from '../images/accuworkWebsite.png';
 import piece from '../images/puzzle.png'; 
 import demoImage from '../images/demo.png'; 
 const Projects = () => {
+
+    const [projectCategory, setProjectCategory] = useState('All');
+
+    const handleCategoryChange = (category) => {
+        setProjectCategory(category);
+    };
+    
     return (
         <>
             <div id="projects" style={{display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', width: '100%', height: '150vh', textAlign: 'left', paddingBottom: '20%'}}>
                     <h2 style={{color: '#3486e6', marginBottom: '2%', paddingTop: '25%'}}>PROJECTS</h2>
                     <h3>All projects are unique piece of work <img src={piece} alt="" style={{width: '20px', height: '20px'}}/></h3>
-                    <div style={{width: '60%', height: '25%', display: 'flex', flexDirection: 'row', gap: '50px', paddingTop: '5%'}}>
+                    <div style={{marginTop: '2%', display: 'flex', gap: '30px'}}>
+                        <button className="button-29" role="button" onClick={() => handleCategoryChange('All')}>All</button>
+                        <button className="button-29" role="button" onClick={() => handleCategoryChange('Personal')}>Personal</button>
+                        <button className="button-29" role="button" onClick={() => handleCategoryChange('Group')}>Group</button>
+                        <button className="button-29" role="button" onClick={() => handleCategoryChange('Hackathon')}>Hackathon</button>
+                    </div>
+                    {projectCategory === "Personal" || projectCategory === "All" ? 
+                    <div className="personal-projects" style={{width: '60%', height: '25%', display: 'flex', flexDirection: 'row', gap: '50px', paddingTop: '2%'}}>
                         <img src={divdevImage}  alt="" className="project-images"/>    
                         <div style={{display: 'flex', flexDirection: 'column'}}>
                             <h3 style={{textAlign: 'center', marginBottom: '5%'}}>
@@ -44,7 +59,9 @@ const Projects = () => {
                             </div>
                         </div>
                      </div>   
-                     
+                     : "" }
+
+                     {projectCategory === "All" || projectCategory === "Hackathon" ?
                      <div style={{width: '60%',height: '25%', display: 'flex', flexDirection: 'row', gap: '50px'}}>
                         <img src={accuworkWebsite}  alt="" className="project-images"/>    
                         <div style={{display: 'flex', flexDirection: 'column'}}>
@@ -74,8 +91,9 @@ const Projects = () => {
                             </div>
                         </div>
                      </div>   
-
-                     <div style={{width: '60%',height: '25%', display: 'flex', flexDirection: 'row', gap: '50px'}}>
+                    : ""}
+                    {projectCategory === "All" || projectCategory === "Personal" ? 
+                     <div className="hackathon-projects" style={{width: '60%',height: '25%', display: 'flex', flexDirection: 'row', gap: '50px'}}>
                         <img src={weatherApp}  alt="" className="project-images"/>    
                         <div style={{display: 'flex', flexDirection: 'column'}}>
                             <h3 style={{textAlign: 'center', marginBottom: '5%'}}>
@@ -102,7 +120,38 @@ const Projects = () => {
                             </div>
                         </div>
                      </div>   
+                        : ""}
 
+                    <div style={{width: '60%',height: '25%', display: 'flex', flexDirection: 'row', gap: '50px'}}>
+                        <img src={weatherApp}  alt="" className="project-images"/>    
+                        <div style={{display: 'flex', flexDirection: 'column'}}>
+                            <h3 style={{textAlign: 'center', marginBottom: '5%'}}>
+                                WhatIsBlockChain <img src={weatherImage} alt="" style={{width: '20px', height: '20px'}}/>
+                            </h3>                                           
+                            <p style={{color: '#808080'}}>
+                                A Solo Hacks 1.0 hackathon project of blockchain technology explanation website. It has gamify functionality to
+                                try the blockchain transaction and include two key concepts explanation which are mining and smart contract
+                            </p>
+                            <p style={{fontWeight: 'bold', marginTop: '5%'}}>
+                                Tech Stack: HTML5, CSS3, React
+                            </p>
+                            <div style={{display: 'flex', marginTop: '5%', justifyContent:'center', gap: '30px'}}>                         
+                                    <a href="https://github.com/devhyun05/WhatToWear" className="link-style">
+                                        <button className="github-button">
+                                            Code <FontAwesomeIcon icon={faGithub} size="2x"/> 
+                                        </button>                                                
+                                    </a>
+                                    <a href="https://www.whattoweartoday.pro" className="link-style">
+                                        <button className="demo-button">
+                                            Demo<img src={demoImage} alt="" style={{width: '30px', height:'30px'}}/>
+                                        </button>           
+                                    </a> 
+                            </div>
+                        </div>
+                     </div>   
+
+                    {projectCategory === "All" ?   
+                                         
                      <div style={{width: '60%', height: '25%', display: 'flex', flexDirection: 'row', gap: '50px'}}>
                         <img src={playpalImage}  alt="" className="project-images"/>    
                         <div style={{display: 'flex', flexDirection: 'column'}}>
@@ -129,7 +178,10 @@ const Projects = () => {
                                     </a>
                             </div>
                         </div>
-                     </div>                               
+                     </div>     
+                     : 
+                     ""
+                     }                          
             </div>
         </>
     )
