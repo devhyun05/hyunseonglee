@@ -1,29 +1,23 @@
 import './App.css'
-import { Element } from 'react-scroll'; 
-import NavigationBar from './components/NavigationBar';
-import Main from './pages/Main';
-import About from './pages/About'; 
-import Projects from './pages/Projects'; 
-import Contact from './pages/Contact';
+import NavigationBar from './components/NavigationBar'
+import Home from './pages/Home';
+import About from './pages/About';
+import Projects from './pages/Projects';
+import Skills from './pages/Skills'; 
+import Contact from './pages/Contact'; 
+
 function App() {
 
 
   return (
     <>
-      <div className="App">
-        <NavigationBar/>
-        <Element name="home">
-          <Main/>
-        </Element>
-        <Element name="about">
-          <About/>
-        </Element>
-        <Element name="projects">
-          <Projects/>
-        </Element>
-        <Element name="contact">
-          <Contact/>
-        </Element>
+      <div>
+        <NavigationBar/> 
+        <Home/>
+        <About/>
+        <Projects/>
+        <Skills/>
+        <Contact/> 
       </div>
     </>
   )

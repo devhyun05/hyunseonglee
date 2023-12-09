@@ -1,55 +1,30 @@
-import phoneImage from '../images/phone.png'; 
-import gmailImage from '../images/gmail.png';
-import linkedInImage from '../images/linkedin.png';
-
 const Contact = () => {
     return (
-        <>
-            <div id="contact" style={{height: '100vh',  backgroundColor: '#f8f4fc', textAlign: 'center'}}>
-                <h2 style={{color: '#3486e6', paddingTop: '5%'}}>
-                    Contacts
-                </h2>
-                <div style={{marginTop: '3%',display: 'flex', flexDirection: 'row', justifyContent: 'center', gap: '10%'}}>
-                  
+        <div name="contact" className="w-full h-screen bg-[#0a192f] p-4 text-white">
+            <div className="flex flex-col p-4 justify-center max-w-screen-lg mx-auto h-full">
+                <div className="pb-8">
+                    <p className="text-4xl font-bold inline border-b-4 border-blue-500">
+                        Contact
+                    </p>
+                    <p className="py-6">Submit the form below to get in touch with me</p>
+                </div>
 
-                    <div style={{width: '20%', height: '150px', backgroundColor: '#FFFFFF', border: '1px solid #f7f7f9', borderRadius: '30px', padding: '15px 70px 70px 30px'}}>
-                        <div style={{width: '100%', marginTop: '15%', marginLeft: '5%', textAlign: 'left',  }}>
-                            <div style={{display: 'flex',  alignItems:'center'}}>
-                                <img src={gmailImage} style={{width: '20px', height: '20px', marginRight: '10px'}}/>
-                                <p>Mail me at   
-                                    <a style={{marginTop: '2px', 
-                                               marginLeft: '10px', 
-                                               textDecoration: 'none',
-                                               textAlign: 'left'}}
-                                               href="mailto: devhyun05@gmail.com">devhyun05@gmail.com                                                        
-                                    </a>
-                                </p> 
-                            </div>
-                            <div style={{marginTop: '5%', display: 'flex',  alignItems:'center'}}>
-                                <img src={linkedInImage} style={{width: '20px', height: '20px', marginRight: '10px'}}/>
-                                <p>Linkedin   <a style={{marginTop: '2px', 
-                                                         marginLeft: '20px', 
-                                                         textAlign: 'left',
-                                                         textDecoration: 'none'}}
-                                                         className="contact-links"  
-                                                         href="https://www.linkedin.com/in/hlee291/"  target='_blank' rel="noopener noreferrer">hlee291</a></p> 
-                            </div>
-                            <div style={{marginTop: '5%', display: 'flex',  alignItems:'center'}}>
-                                <img src={phoneImage} style={{width: '20px', height: '20px', marginRight: '10px'}}/>
-                                <p>Phone   
-                                    <a style={{marginTop: '2px', marginLeft: '40px', textDecoration: 'none', color: 'blue', cursor: 'pointer', textAlign: 'left'}}>
-                                        437-223-7368
-                                    </a>
-                                </p> 
-                            </div>
-                          
-                        </div>
-                    </div>
+                <div className="flex justify-center items-center">
+                    <form action="https://getform.io/f/07156770-ec19-4fd0-8dda-66e229e526db" method="POST" className="flex flex-col w-full md:w-1/2">
+                        <input type="text" name="name" placeholder="Enter your name" className="p-2 bg-transparent border-2 rounded-md text-white focus:outline-none"/> 
+                        <input type="text" name="email" placeholder="Enter your email" className="my-4 p-2 bg-transparent border-2 rounded-md text-white focus:outline-none"/> 
+                        <textarea name="message" placeholder="Enter your message" rows="10" className="p-2 bg-transparent border-2 rounded-md text-white focus:outline-none"
+                        ></textarea>
+                        <button className="text-white border-2 px-6 py-3 my-8 mx-auto flex items-center">
+                            Let&apos;s talk                  
+                         </button>
+                    </form>
+
 
                 </div>
             </div>
-        </>
+        </div>
     )
 }
 
-export default Contact;
+export default Contact; 

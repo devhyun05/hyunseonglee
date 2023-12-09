@@ -1,35 +1,72 @@
-import codeImage from '../images/coding.png'; 
-import { Link } from 'react-scroll'; 
+import { useState } from 'react'; 
+import { FaBars, FaTimes, FaGithub, FaLinkedin } from 'react-icons/fa'; 
+import { HiOutlineMail } from 'react-icons/hi'; 
+import {BsFillPersonLinesFill} from 'react-icons/bs'; 
 
 const NavigationBar = () => {
+    const [nav, setNav] = useState(false)
+    const handleClick = () => setNav(!nav)
 
     return (
-        <> 
-            <div style={{position: 'fixed', 
-                         top: '0', 
-                         width: '90%', 
-                         backgroundColor: 'white',
-                         display: 'flex', 
-                         flexDirection: 'row', 
-                         alignItems: 'center', 
-                         padding: '3% 7% 1% 7%', 
-                         borderBottom: '1px solid #cecece', }}>
-                <h3 style={{display: 'flex', gap: '10px'}}>
-              
-                    HyunSeongLee
-                    <img src={codeImage} alt="" style={{width: '28px'}}/>
-                </h3>
-                <nav style={{display: 'flex', width: '100%', justifyContent: 'flex-end'}}>
-                    <ul style={{display: 'flex', flexDirection: 'row', justifyContent: 'flex-end', gap: '30px'}}>                        
-                        <li><Link to="home"  spy={true} smooth={true} offset={-70}  duration={500} className="nav-links" activeClass="active-link">Home</Link></li>
-                        <li><Link to="about" spy={true} smooth={true} offset={-70} duration={500} className="nav-links" activeClass="active-link">About</Link></li>
-                        <li><Link to="projects"spy={true} smooth={true} offset={-70} duration={500} className="nav-links" activeClass="active-link">Projects</Link></li>
-                        <li><Link to="contact" spy={true} smooth={true} offset={-70} duration={500} className="nav-links" activeClass="active-link">Contact</Link></li>
-                    </ul>
-                </nav>
-                
+        <div className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300">
+            <div>
+
             </div>
-        </> 
+            {/* menu */}
+            <div className="hidden md:flex">
+                <ul className="flex">
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Projects</li>
+                    <li>Skills</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+
+            {/* Hamburger */}
+            <div onClick={handleClick} className="md:hidden z-10">
+                {!nav ? <FaBars /> : <FaTimes/>}
+            </div>
+
+            {/* mobile menu */}
+            <ul className={!nav ? "hidden" : "absolute top-0 left-0 w-full h-screen bg-[#0a192f] flex flex-col justify-center items-center"}>
+                <li className="py-6 text-4xl">Home</li>
+                <li className="py-6 text-4xl">About</li>
+                <li className="py-6 text-4xl">Skills</li>
+                <li className="py-6 text-4xl">Projects</li>
+                <li className="py-6 text-4xl">Contact</li>
+            </ul>
+
+            {/* Social icons */}
+            <div className="hidden lg:flex fixed flex-col top-[35%] left-0">
+                <ul>
+                    <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-500">
+                        <a className="flex justify-between items-center w-full text-gray-300" 
+                            href="/">
+                            Linkedin <FaLinkedin size={30}/>
+                        </a>
+                    </li>
+                    <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-500">
+                        <a className="flex justify-between items-center w-full text-gray-300" 
+                            href="/">
+                            GitHub <FaGithub size={30}/>
+                        </a>
+                    </li>
+                    <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-500">
+                        <a className="flex justify-between items-center w-full text-gray-300" 
+                            href="/">
+                            Email <HiOutlineMail size={30}/>
+                        </a>
+                    </li>
+                    <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-500">
+                        <a className="flex justify-between items-center w-full text-gray-300" 
+                            href="/">
+                            Resume <BsFillPersonLinesFill size={30}/>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     )
 }
 
