@@ -41,19 +41,19 @@ const NavigationBar = () => {
                 <ul>
                     <li className="w-[160px] h-[60px] flex rounded-tr-lg justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-500">
                         <a className="flex justify-between items-center w-full text-gray-300" 
-                            href="/">
+                            href="https://www.linkedin.com/in/hlee291/" target="_blank" rel="noreferrer">
                             Linkedin <FaLinkedin size={30}/>
                         </a>
                     </li>
                     <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-500">
                         <a className="flex justify-between items-center w-full text-gray-300" 
-                            href="/">
+                            href="https://github.com/devhyun05" target="_blank" rel="noreferrer">
                             GitHub <FaGithub size={30}/>
                         </a>
                     </li>
                     <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-500">
                         <a className="flex justify-between items-center w-full text-gray-300" 
-                            href="/">
+                            href="/" >
                             Email <HiOutlineMail size={30}/>
                         </a>
                     </li>
