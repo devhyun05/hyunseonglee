@@ -44,7 +44,7 @@ const Skills = () => {
             id: 6, 
             src: expressJs,
             title: "Express",
-            style: "shadow-gray-500"
+            style: "shadow-yellow-300"
         },
         {
             id: 7, 
