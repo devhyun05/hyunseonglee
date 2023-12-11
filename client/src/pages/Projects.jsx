@@ -57,7 +57,7 @@ const Projects = () => {
             src: accuwork,
             title: "Work History Verification System",
             videoURL: "",
-            websiteURL: "https://www.divdev.pro",
+            websiteURL: "https://www.accuwork.pro",
             githubURL: "https://github.com/devhyun05/Accuwork",
             projectType: "Team project, hackathon"
         },
