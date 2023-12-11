@@ -108,7 +108,7 @@ const Projects = () => {
                                                         <a href={websiteURL} target="_blank" rel="noreferrer">Website</a>
                                                     </button>
                                                     <button className="w-1/2 px6 py-3 m-2 duration-200 hover:scale-105">
-                                                        <a to={githubURL} target="_blank" rel="noreferrer">Github</a>
+                                                        <a href={githubURL} target="_blank" rel="noreferrer">Github</a>
                                                     </button>
                                                 </>
                                             }
