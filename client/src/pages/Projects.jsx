@@ -1,4 +1,4 @@
-import divdev from '../assets/projects/divdev.png'; 
+import divdev from '../assets/projects/divdev.png';
 import talkToGPT from '../assets/projects/talktogpt.png';
 import whatToWearToday from '../assets/projects/whattowear.png';
 import whatIsBlockChain from '../assets/projects/whatisblockchain.png';
@@ -8,32 +8,34 @@ import accuwork from '../assets/projects/accuworkWebsite.png';
 const Projects = () => {
     const projects = [
         {
-            id: 1, 
+            id: 1,
             src: divdev,
             title: "Blog-Style Portfolio Builder",
             videoURL: "https://www.veed.io/embed/aa0c1440-9ceb-4833-8628-df474c963578",
             websiteURL: "https://www.divdev.pro",
-            githubURL: "https://github.com/devhyun05/divdev", 
+            githubURL: "https://github.com/devhyun05/divdev",
             projectType: "Solo project, personal"
         },
         {
-            id: 2, 
+            id: 2,
             src: talkToGPT,
             title: "Voice-Activated ChatGPT Assistant",
+            videoURL: "",
             websiteURL: "https://www.talktogpt.pro",
             githubURL: "https://github.com/devhyun05/TalkGPT",
             projectType: "Solo project, personal"
         },
         {
-            id: 3, 
+            id: 3,
             src: whatToWearToday,
             title: "Clothing Recommendation App",
+            videoURL: "",
             websiteURL: "https://www.whattowear.pro",
             githubURL: "https://github.com/devhyun05/WhatToWear",
             projectType: "Solo project, personal"
         },
         {
-            id: 4, 
+            id: 4,
             src: whatIsBlockChain,
             title: "Blockchain Educational Website",
             videoURL: "https://www.youtube.com/watch?v=qmThY-K-ag4",
@@ -42,17 +44,19 @@ const Projects = () => {
             projectType: "Solo project, hackathon"
         },
         {
-            id: 5, 
+            id: 5,
             src: playpal,
             title: "Sports League Management App",
+            videoURL: "",
             websiteURL: "https://playpal.netlify.app/",
             githubURL: "https://github.com/devhyun05/sourcerers-leagueMgmt",
             projectType: "Team project, college"
         },
         {
-            id: 6, 
+            id: 6,
             src: accuwork,
             title: "Work History Verification System",
+            videoURL: "",
             websiteURL: "https://www.divdev.pro",
             githubURL: "https://github.com/devhyun05/Accuwork",
             projectType: "Team project, hackathon"
@@ -68,32 +72,45 @@ const Projects = () => {
 
                 </div>
                 <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
-                {
-                    projects.map(({id, src, title, videoURL, websiteURL, githubURL, projectType}) => (
-                        <div key={id} className="shadow-md shadow-gray-500 rounded-lg">
-                            <div className="pt-5 pb-2 flex justify-center font-bold">{title} </div>
-                            <div className="pb-2 flex justify-center">({projectType})</div>
-                   
-                            <img src={src} alt="" className="rounded-md duration-200 hover:scale-105"/>
-               
-                            <div className="flex items-center justify-center">
-                                <button className="w-1/3 px6 py-3 m-2 duration-200 hover:scale-105">
-                                    <a href={videoURL} target="_blank" rel="noreferrer">Video</a>
-                                </button>
-                                <button className="w-1/3 px6 py-3 m-2 duration-200 hover:scale-105">
-                                    <a href={websiteURL} target="_blank" rel="noreferrer">Website</a>
-                                </button>
-                                <button className="w-1/3 px6 py-3 m-2 duration-200 hover:scale-105">
-                                    <a to={githubURL} target="_blank" rel="noreferrer">Github</a>
-                                </button>
+                    {
+                        projects.map(({ id, src, title, videoURL, websiteURL, githubURL, projectType }) => (
+                            <div key={id} className="shadow-md shadow-gray-500 rounded-lg">
+                                <div className="pt-5 pb-2 flex justify-center font-bold">{title} </div>
+                                <div className="pb-2 flex justify-center">({projectType})</div>
+
+                                <img src={src} alt="" className="rounded-md duration-200 hover:scale-105" />
+
+                                <div className="flex items-center justify-center">
+                                    {videoURL ?
+                                        <>
+                                            <button className="w-1/3 px6 py-3 m-2 duration-200 hover:scale-105">
+                                                <a href={videoURL} target="_blank" rel="noreferrer">Video</a>
+                                            </button>
+                                            <button className="w-1/3 px6 py-3 m-2 duration-200 hover:scale-105">
+                                                <a href={websiteURL} target="_blank" rel="noreferrer">Website</a>
+                                            </button>
+                                            <button className="w-1/3 px6 py-3 m-2 duration-200 hover:scale-105">
+                                                <a to={githubURL} target="_blank" rel="noreferrer">Github</a>
+                                            </button>
+                                        </> :
+                                        <>
+                                            <button className="w-1/2 px6 py-3 m-2 duration-200 hover:scale-105">
+                                                <a href={websiteURL} target="_blank" rel="noreferrer">Website</a>
+                                            </button>
+                                            <button className="w-1/2 px6 py-3 m-2 duration-200 hover:scale-105">
+                                                <a to={githubURL} target="_blank" rel="noreferrer">Github</a>
+                                            </button>
+                                        </>
+                                    }
+
+                                </div>
                             </div>
-                        </div>
-                    ))
-                }
+                        ))
+                    }
                 </div>
             </div>
         </div>
-        
+
     )
 }
 
