@@ -16,9 +16,10 @@ const About = () => {
                             fuels my love for this craft.
                         </p>
                         <p>
-                            As a software developer, I think that teamwork and constant learning are important. A 
-                            single person can create a great application, but a good team of people can create 
-                            outstanding application. I like the atmosphere where the team is connected.
+                            As a software developer, I believe that and continous learning are crucial. 
+                            While an individual can create a great application, a cohesive team of people 
+                            can produce outstanding results. I like the collaborative atmosphere where the
+                            team is connected
                         </p>
                         <p>
                             The software industry is evolving rapidly, with new technologies emerging every day. I 
