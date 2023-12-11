@@ -1,7 +1,9 @@
 import { useState } from 'react'; 
-import { FaBars, FaTimes, FaGithub, FaLinkedin } from 'react-icons/fa'; 
+import { FaBars, FaCode, FaTimes, FaGithub, FaLinkedin } from 'react-icons/fa'; 
 import { HiOutlineMail } from 'react-icons/hi'; 
 import {BsFillPersonLinesFill} from 'react-icons/bs'; 
+
+import { Link } from 'react-scroll'; 
 
 const NavigationBar = () => {
     const [nav, setNav] = useState(false)
@@ -10,15 +12,31 @@ const NavigationBar = () => {
     return (
         <div className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300">
             <div>
-
+                <h1 className="text-3xl text-blue-300 font-signature ml-2">Hyun Seong Lee</h1>
             </div>
             {/* menu */}
             <div className="hidden md:flex ">
                 <ul className="flex">
-                    <li>About Me</li>
-                    <li>Projects</li>
-                    <li>Skills</li>
-                    <li>Contact</li>
+                    <li className="hover:text-blue-500 ">
+                        <Link to="about" smooth={true} duration={500}>
+                            About Me
+                        </Link>
+                    </li>
+                    <li className="hover:text-blue-500">
+                        <Link to ="projects" smooth={true} duration={500}>
+                            Projects
+                        </Link>
+                    </li>
+                    <li className="hover:text-blue-500">
+                        <Link to ="skills" smooth={true} duration={500}>
+                            Skills
+                        </Link>
+                    </li>
+                    <li className="hover:text-blue-500">
+                        <Link to ="contact" smooth={true} duration={500}>
+                            Contact
+                        </Link>
+                    </li>
                 </ul>
             </div>
 
@@ -29,11 +47,30 @@ const NavigationBar = () => {
 
             {/* mobile menu */}
             <ul className={!nav ? "hidden" : "absolute top-0 left-0 w-full h-screen bg-[#0a192f] flex flex-col justify-center items-center"}>
-                <li className="py-6 text-4xl">Home</li>
-                <li className="py-6 text-4xl">About</li>
-                <li className="py-6 text-4xl">Skills</li>
-                <li className="py-6 text-4xl">Projects</li>
-                <li className="py-6 text-4xl">Contact</li>
+                <li  className="py-6 text-4xl">
+                    {' '}
+                    <Link onClick={handleClick} to="about" smooth={true} duration={500}>
+                        About Me
+                    </Link>
+                </li>
+                <li className="py-6 text-4xl">
+                    {' '}
+                    <Link onClick={handleClick} to="projects" smooth={true} duration={500}>
+                        Projects
+                    </Link>
+                </li>
+                <li className="py-6 text-4xl">
+                    {' '}
+                    <Link onClick={handleClick} to="skills" smooth={true} duration={500}>
+                        Skills
+                    </Link>
+                </li>
+                <li className="py-6 text-4xl">
+                    {' '}
+                    <Link onClick={handleClick} to="contact" smooth={true} duration={500}>
+                        Contact
+                    </Link>
+                </li>
             </ul>
 
             {/* Social icons */}
@@ -53,16 +90,17 @@ const NavigationBar = () => {
                     </li>
                     <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-500">
                         <a className="flex justify-between items-center w-full text-gray-300" 
-                            href="/" >
+                            href="#">
+                            Devpost <FaCode size={30}/>
+                        </a>
+                    </li>
+                    <li className="w-[160px] h-[60px] flex justify-between rounded-br-lg items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-500">
+                        <a className="flex justify-between items-center w-full text-gray-300" 
+                            href="mailto:devhyun05@gmail.com" >
                             Email <HiOutlineMail size={30}/>
                         </a>
                     </li>
-                    <li className="w-[160px] h-[60px] flex rounded-br-lg justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-500">
-                        <a className="flex justify-between items-center w-full text-gray-300" 
-                            href="/">
-                            Resume <BsFillPersonLinesFill size={30}/>
-                        </a>
-                    </li>
+ 
                 </ul>
             </div>
         </div>
