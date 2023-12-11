@@ -21,9 +21,9 @@ const About = () => {
                             outstanding application. I like the atmosphere where the team is connected.
                         </p>
                         <p>
-                            Software industry is evolving fast. Everyday, new technologies come out to the market. 
-                            I believe that the purpose of software is to help people. It is for making people&apos;s 
-                            lives better. I want to become a developer who makes more people feel happy.
+                            The software industry is evolving rapidly, with new technologies emerging every day. I 
+                            believe that the purpose of software is to enhance people&apos;s lives and make them better. 
+                            I aspire to become a developer who brings happiness to more people.
                         </p>
                     </div>
                     <div className="lg:w-1/2 flex justify-center items-center">
