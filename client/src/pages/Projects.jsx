@@ -81,29 +81,41 @@ const Projects = () => {
                                 <img src={src} alt="" className="rounded-md duration-200 hover:scale-105" />
 
                                 <div className="flex items-center justify-center">
-                                    {videoURL ?
+                                    {id === 2 ?
                                         <>
                                             <button className="w-1/3 px6 py-3 m-2 duration-200 hover:scale-105">
                                                 <a href={videoURL} target="_blank" rel="noreferrer">Video</a>
                                             </button>
                                             <button className="w-1/3 px6 py-3 m-2 duration-200 hover:scale-105">
-                                                <a href={websiteURL} target="_blank" rel="noreferrer">Website</a>
-                                            </button>
-                                            <button className="w-1/3 px6 py-3 m-2 duration-200 hover:scale-105">
-                                                <a to={githubURL} target="_blank" rel="noreferrer">Github</a>
+                                                <a href={githubURL} target="_blank" rel="noreferrer">Github</a>
                                             </button>
                                         </> :
                                         <>
-                                            <button className="w-1/2 px6 py-3 m-2 duration-200 hover:scale-105">
-                                                <a href={websiteURL} target="_blank" rel="noreferrer">Website</a>
-                                            </button>
-                                            <button className="w-1/2 px6 py-3 m-2 duration-200 hover:scale-105">
-                                                <a to={githubURL} target="_blank" rel="noreferrer">Github</a>
-                                            </button>
+                                            {videoURL ?
+                                                <>
+                                                    <button className="w-1/3 px6 py-3 m-2 duration-200 hover:scale-105">
+                                                        <a href={videoURL} target="_blank" rel="noreferrer">Video</a>
+                                                    </button>
+                                                    <button className="w-1/3 px6 py-3 m-2 duration-200 hover:scale-105">
+                                                        <a href={websiteURL} target="_blank" rel="noreferrer">Website</a>
+                                                    </button>
+                                                    <button className="w-1/3 px6 py-3 m-2 duration-200 hover:scale-105">
+                                                        <a href={githubURL} target="_blank" rel="noreferrer">Github</a>
+                                                    </button>
+                                                </> :
+                                                <>
+                                                    <button className="w-1/2 px6 py-3 m-2 duration-200 hover:scale-105">
+                                                        <a href={websiteURL} target="_blank" rel="noreferrer">Website</a>
+                                                    </button>
+                                                    <button className="w-1/2 px6 py-3 m-2 duration-200 hover:scale-105">
+                                                        <a to={githubURL} target="_blank" rel="noreferrer">Github</a>
+                                                    </button>
+                                                </>
+                                            }
                                         </>
                                     }
-
                                 </div>
+
                             </div>
                         ))
                     }
