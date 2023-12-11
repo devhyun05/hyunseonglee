@@ -16,7 +16,7 @@ const About = () => {
                             fuels my love for this craft.
                         </p>
                         <p>
-                            As a software developer, I believe that and continous learning are crucial. 
+                            As a software developer, I believe that teamwork and continous learning are crucial. 
                             While an individual can create a great application, a cohesive team of people 
                             can produce outstanding results. I like the collaborative atmosphere where the
                             team is connected
