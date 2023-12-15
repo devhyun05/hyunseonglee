@@ -20,7 +20,7 @@ const Projects = () => {
             id: 2,
             src: talkToGPT,
             title: "Voice-Activated ChatGPT Assistant",
-            videoURL: "",
+            videoURL: "https://www.youtube.com/watch?v=dvpjVYKQOPE",
             websiteURL: "https://www.talktogpt.pro",
             githubURL: "https://github.com/devhyun05/TalkGPT",
             projectType: "Solo project, personal"
