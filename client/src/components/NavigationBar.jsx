@@ -90,7 +90,7 @@ const NavigationBar = () => {
                     </li>
                     <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-500">
                         <a className="flex justify-between items-center w-full text-gray-300" 
-                            href="https://devpost.com/software/whatisblockchain" target="_blank" rel="noreferrer">
+                            href="https://devpost.com/devhyun05?ref_content=user-portfolio&ref_feature=portfolio&ref_medium=global-nav" target="_blank" rel="noreferrer">
                             Devpost <FaCode size={30}/>
                         </a>
                     </li>
